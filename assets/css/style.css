@@ -55,7 +55,7 @@ h3{
   font-weight: 500;
   text-transform: uppercase;
   position: absolute;
-  left: 80px;
+  left: 70px;
   white-space: nowrap;
 
   
@@ -65,7 +65,7 @@ h3{
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  width: 170%;
+  width: 180%;
   height: 2px;
   background: #000;
   border: solid #FFF;
@@ -74,6 +74,20 @@ h3{
 }
 .title:before {
   margin-left: -90%;
+}
+
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: calc(1135/1500*100%);
+	margin-left: 12%;
+	margin-top: calc(5/150*100%);
+}
+.gallery .gal_elem{
+	height: 270px;
+	overflow: hidden;
+	/*border: 1px solid #000;*/
 }
 /*
 0. /basic settings
@@ -439,7 +453,8 @@ header menu li a:hover{
 9. My works
 --------------------------------------------------------------------*/
 #my_works{
-	padding-top: 3%;
+	padding-top: calc(1/15*100%);
+
 }
 #my_works .gallery{
 	display: flex;
@@ -447,19 +462,22 @@ header menu li a:hover{
 	justify-content: space-between;
 	width: calc(1135/1500*100%);
 	margin-left: 12%;
-	margin-top: 10%;
+	margin-top: calc(5/150*100%);
 }
-.gal_elem{
-	height: 250px;
+#my_works .gallery .gal_elem{
+	height: 270px;
 	overflow: hidden;
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 }
-.gallery .gal_elem:nth-child(-n+2){
+#my_works .gallery .gal_elem:nth-child(-n+2){
 
 	width: 48.4%;
 	margin-bottom: 50px;
 }
-.gallery .gal_elem:nth-child(n+3){
+#my_works .gallery .gal_elem:nth-child(n+3){
+	width: calc(360/1135*100%);
+}
+.gal2{
 	width: calc(360/1135*100%);
 }
 /*
@@ -469,7 +487,10 @@ header menu li a:hover{
 /*
 10. My team
 --------------------------------------------------------------------*/
-
+#my_team{
+	padding-top: 6%;
+	border-top: 1px solid #000;
+}
 /*
 10. /My team
 --------------------------------------------------------------------*/
