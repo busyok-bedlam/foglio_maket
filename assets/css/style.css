@@ -1,0 +1,491 @@
+/*============================================================
+		0. basic settings
+		1. header
+		2. logotip
+		3. about me
+		4. my skills
+		5. my experience
+		6. slider
+		7. my services
+		8. statistic
+		9. my works
+		10. my team
+		11. get in touch
+		12. footer 
+=============================================================*/
+
+
+/*
+0. basic settings
+-------------------------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	font-family: sans-serif;
+
+}
+a{
+	text-decoration: none;
+	text-transform: none;
+}
+li{
+	list-style-type: none;
+}
+h1{
+	font-size: 3em;
+	text-transform: uppercase;
+	
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+h3{
+	font-weight: normal;
+}
+.title {
+  /*overflow: hidden;*/
+  background: #fff;
+  font-weight: normal;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute;
+  left: 80px;
+  white-space: nowrap;
+
+  
+}
+.title:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 170%;
+  height: 2px;
+  background: #000;
+  border: solid #FFF;
+  border-width: 0 5px;
+  text-indent: 0;
+}
+.title:before {
+  margin-left: -90%;
+}
+/*
+0. /basic settings
+-------------------------------------------------------------------*/
+
+/*
+1. Header
+-------------------------------------------------------------------*/
+header{
+	position: absolute;
+	height: 70px;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 197, 255, 0.3);
+}
+header menu {
+	float: left;
+	overflow: hidden;
+	height: inherit;
+	width: 76%;
+
+}
+header menu li {
+	float: left;
+	display: inline-block;
+	height: inherit;
+	/*width: calc(100%/6);*/
+
+	text-align: center;
+}
+header menu li a{
+	display: block;
+	height: inherit;
+	line-height: 70px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0 20px 0 20px;
+	font-size: 1em;
+	transition: background .5s ease-out;
+}
+header menu li a:hover{
+	background-color: rgba(188, 39, 72, 0.4);
+	border-bottom: 4px solid #FF8800;
+}
+.logo{
+	display: block;
+	float: left;
+	height: inherit;
+	text-transform: uppercase;
+	width: 200px;
+	line-height: 70px;
+	color: #fff;
+	text-indent: 50px;
+	z-index: 22;
+}
+
+
+/*
+1. /Header
+-------------------------------------------------------------------*/
+
+/*
+2. Logotip
+-------------------------------------------------------------------*/
+#logotip{
+	background-image: url("../../images/background/human1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+	padding-top: 200px;
+	padding-left: 175px;
+	color: #fff;
+}
+.download{
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+	border: 2px solid #fff;
+	margin-top: 10px;
+}
+.download:hover{
+	
+	color:#ccc;
+	border-color: #ccc;
+}
+/*
+2. /Logotip
+-------------------------------------------------------------------*/
+
+
+
+/*
+3. About Me
+-------------------------------------------------------------------*/
+#about_me{
+	/*padding-top: 6.4em;*/
+	padding-top: 6%;
+	padding-bottom: 6%;
+	padding-left: calc(47/150*100%);
+	position: relative;
+	overflow: hidden;
+}
+#about_me article{
+	overflow: hidden;
+}
+#about_me article h2,#about_me article .content{
+	float: left;
+	
+}
+#about_me article h2{
+
+	width: 31%;
+	font-size: 1.4;
+	font-weight: 300;
+}
+#about_me article .content{
+	width: 65%;
+}
+#about_me p:nth-child(2) {
+	margin: 20px 0;
+}
+#about_me .content .links{
+	font-size: 2em;
+
+}
+#about_me .content .links a{
+	color: #000;
+	margin-right: 30px;
+}
+#about_me .content .links a:hover{
+	color: #4A4A4A;
+
+}
+
+
+
+/*
+3. /About Me
+-------------------------------------------------------------------*/
+
+/*
+4. My skills
+-
+------------------------------------------------------------------*/
+#my_skills{
+	height: 280px;
+	background: #000;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 500;
+}
+#my_skills .skill{
+	width: calc(26/150*100%);
+	/*border: 1px solid #fff;*/
+	float: left;
+	height: inherit;
+	margin-left: 12%;
+}
+#my_skills .skill span{
+	display: block;
+}
+#my_skills .skill .progress{
+	width: 100%;
+	height: 10px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	position: relative;
+
+}
+#my_skills .skill .progress .strips{
+	font-size: 1.5em;
+	position: relative;
+	height: 6px;
+	background: #fff;
+	border-radius: 3px;
+}
+.strip1{
+	width: 80%;
+}
+.strip2{
+	width: 70%;
+}
+.strip3{
+	width: 90%;
+}
+.procent{
+	margin-top: 30%;
+}
+.skillname{
+	margin-top: 9%;
+}
+.progress{
+	margin-top: 7%;
+}
+/*
+4. /My skills
+-------------------------------------------------------------------*/
+
+/*
+5. My experience
+-------------------------------------------------------------------*/
+#my_experience{
+	padding-top: 6%;
+	padding-bottom: 6%;
+	padding-left: calc(47/150*100%);
+	position: relative;
+}
+#my_experience h4{
+	font-weight: normal;
+}
+#my_experience > article{
+	position: relative;
+	width: 54%;
+	padding: 3% 7.5%;
+	border: 1px solid #ccc;
+	line-height: 1.5;
+	box-shadow: 0 0 10px #ccc;
+	margin-bottom: 50px;
+	z-index: 1;
+}
+#my_experience > article:nth-of-type(2){
+	margin-left: 9.3%;
+}
+
+#my_experience > article >aside{
+	position: absolute;
+	width: 70%;
+	padding: 3% 0;
+	border: 1px solid #000;
+	text-align: center;
+	left: 85%;
+	top: 40%;
+	background: #fff;
+	z-index: 2;
+
+	
+}
+#my_experience > .exp2 > aside{
+	left: -60%;
+}
+#my_experience > article >aside h4{
+	font-size: 1.5em;
+
+
+}
+
+
+/*
+5. /My experience
+-------------------------------------------------------------------*/
+
+/*
+6. Slider
+--------------------------------------------------------------------*/
+#slider{
+	height: 380px;
+	background-image: url("../../images/background/mount2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*
+6. /Slider
+--------------------------------------------------------------------*/
+
+/*
+7. My services
+--------------------------------------------------------------------*/
+#my_services{
+	padding-top: 6%;
+	padding-bottom: 6%;
+	padding-left: calc(47/150*100%);
+	position: relative;	
+}
+#my_services .serv{
+	width: 24.3%;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 20px #ccc;
+	padding: 3% 3%;
+	position: relative;
+	z-index: 1;
+}
+#my_services .serv1{
+	margin-bottom: 3%;
+}
+#my_services .serv3{
+	margin-top: 3%;
+}
+#my_services .serv2{
+
+	margin-left: 250px;
+	margin-bottom: -65px;
+	margin-top: -65px;
+}
+#my_services .serv aside{
+	position: absolute;
+	border: 1px solid #000;
+	width: 100%;
+	text-align: center;
+	padding: 2% 0;
+	z-index: 2;
+	background: #fff;
+	bottom: -7%;
+
+}
+#my_services .serv aside i{
+	font-size: 1.5em;
+	margin-right: 5%;
+}
+#my_services .serv aside span{
+	font-size: 1.2em;
+}
+#my_services>div:nth-of-type(2n-1)>aside{
+	left: -15.2%;
+}
+/*
+7. /My services
+--------------------------------------------------------------------*/
+
+/*
+8. Statistics
+--------------------------------------------------------------------*/
+#statistics{
+	height: 280px;
+	background-image: url("../../images/background/mount6.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	background-position: center;
+	overflow: hidden;
+	padding-left: calc(265/1500*100%);
+	white-space: nowrap;
+}
+.stat{
+	width: calc(2/15.5*100%);
+	float: left;
+/*	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;*/
+	height: inherit;
+	text-align: center;
+	margin-right: calc(2/15*100%);
+}
+
+.stat>span{
+	display: block;
+}
+.num{
+	margin-top: 50%;
+	font-size: 1.5em;
+	margin-bottom: 20%;
+
+}
+.descr{
+	font-size: 1.3em;
+}
+/*
+8. /Statistics
+--------------------------------------------------------------------*/
+
+/*
+9. My works
+--------------------------------------------------------------------*/
+#my_works{
+	padding-top: 3%;
+}
+#my_works .gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: calc(1135/1500*100%);
+	margin-left: 12%;
+	margin-top: 10%;
+}
+.gal_elem{
+	height: 250px;
+	overflow: hidden;
+	border: 1px solid #000;
+}
+.gallery .gal_elem:nth-child(-n+2){
+
+	width: 48.4%;
+	margin-bottom: 50px;
+}
+.gallery .gal_elem:nth-child(n+3){
+	width: calc(360/1135*100%);
+}
+/*
+9. /My works
+--------------------------------------------------------------------*/
+
+/*
+10. My team
+--------------------------------------------------------------------*/
+
+/*
+10. /My team
+--------------------------------------------------------------------*/
+
+/*
+11. /Get in touch
+--------------------------------------------------------------------*/
+
+/*
+11. /Get in touch
+--------------------------------------------------------------------*/
+
+/*
+12. Footer
+--------------------------------------------------------------------*/
+
+/*
+12. /Footer
+--------------------------------------------------------------------*/
