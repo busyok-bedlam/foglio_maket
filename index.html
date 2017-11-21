@@ -24,7 +24,7 @@
 	<!-- Logotip -->
 	<section id="logotip">
 		<h1>steve john</h1>
-		<span>I'm a proffesional Graphicks designer</span>
+		<span class="intro">I'm a proffesional Graphicks designer</span>
 		</br>
 		<a class="download" href="#">
 			<i class="fa fa-download" aria-hidden="true"></i>
@@ -40,7 +40,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores unde laboriosam illo magnam, praesentium temporibus nisi voluptatem nostrum debitis eum sequi quae, veniam aliquid nihil facilis sit dolorem eligendi animi.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aliquid officia velit eaque exercitationem commodi harum magnam ex adipisci enim non, aspernatur soluta nihil fuga labore, minima neque ducimus repellendus.</p>
 				<div class="links">
-					<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-behance-square" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
@@ -80,7 +80,7 @@
 		<h2 class="title">My experience</h2>
 		<article class="exp exp1">
 			<h3>GRAPHICK DESIGNER</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias maiores veritatis sit cumque, ex dolore error, debitis ut eius aspernatur harum earum incidunt aperiam tempore. Soluta accusantium nisi hic nulla.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias maiores veritatis sit cumque, ex do accusantium nisi hic nulla.</p>
 			<aside>
 				<h4>GRAPHICRIVER</h4>
 				<p>From 2016 t0 2017</p>
@@ -88,7 +88,7 @@
 		</article>
 		<article class="exp exp2">
 			<h3>UI/UX DESIGNER</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, officiis? Commodi, distinctio. Ut mollitia cumque adipisci, officia neque quas voluptate harum, similique quis porro nostrum minus quo, fugit atque quasi.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, officiis? Commodi, distinctio. Ut mollit quo, fugit atque quasi.</p>
 			<aside>
 				<h4>THEMEFOREST</h4>
 				<p>From 2016 t0 2017</p>
@@ -96,7 +96,7 @@
 		</article>
 		<article class="exp exp3">
 			<h3>UI/UX DESIGNER</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit obcaecati similique voluptatem at ipsum architecto culpa sed tempora numquam molestiae nemo nulla dolorum voluptate rerum sequi aliquam fugiat, porro ducimus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit obcaecati similique voluptatem at aliquam fugiat, porro ducimus.</p>
 			<aside>
 				<h4>UPWORK</h4>
 				<p>From 2016 t0 2017</p>
@@ -104,7 +104,9 @@
 		</article>
 	</section>
 	<!-- Slider -->
-	<section id="slider"></section>
+	<section id="slider">
+		<div class="conte"></div>
+	</section>
 	<!-- My Services -->
 	<section id="my_services">
 		<h2 class="title">My servises</h2>
@@ -132,17 +134,19 @@
 	</section>
 	<!-- My Statistics -->
 	<section id="statistics">
-		<div class="stat">
-			<span class="num">120</span>
-			<span class="descr">PROJECTS DONE</span>
-		</div>
-		<div class="stat">
-			<span class="num">100</span>
-			<span class="descr">HAPPY CLIENTS</span>
-		</div>
-		<div class="stat">
-			<span class="num">450</span>
-			<span class="descr">HOURS OF WORK</span>
+		<div class="stats">
+			<div class="stat">
+				<span class="num">120</span>
+				<span class="descr">PROJECTS DONE</span>
+			</div>
+			<div class="stat">
+				<span class="num">100</span>
+				<span class="descr">HAPPY CLIENTS</span>
+			</div>
+			<div class="stat">
+				<span class="num">450</span>
+				<span class="descr">HOURS OF WORK</span>
+			</div>			
 		</div>
 	</section>
 	<!-- My Works -->
@@ -161,20 +165,52 @@
 		<div class="title">MY TEAM</div>
 		<div class="gallery">
 			<figure class="gal_elem gal2">
+				<div class="fon"></div>
 				<img src="images/gallery/man4.png" alt="#">
 			</figure>
 			<figure class="gal_elem gal2">
+				<div class="fon"></div>
 				<img src="images/gallery/man3.png" alt="#">
 			</figure>
 			<figure class="gal_elem gal2">
+				<div class="fon"></div>
 				<img src="images/gallery/man2.png" alt="#">
 			</figure>
 		</div>
 	</section>
 	<!-- Contacts -->
-	<section id="get_in_touch"></section>
+	<section id="get_in_touch">
+		<div class="title">GET IN TOUCH</div>
+		<div class="contacts">
+			<div class="cont">
+				<p class="icon"><i class="fa fa-address-book-o" aria-hidden="true"></i></p>
+				<p>89 Avenu,Black Street New York</p>
+			</div>
+			<div class="cont">
+				<p class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+				<p>lalalalal@gmail.com</p>
+			</div>
+			<div class="cont">
+				<p class="icon"><i class="fa fa-phone" aria-hidden="true"></i></p>
+				<p>55444666633</p>
+			</div>
+		</div>
+		<form action="#" class="myform">
+			<input type="text" placeholder="NAME">
+			<input type="email" placeholder="E-MAIL">
+			<textarea name="" id="" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+			<button type="submit">SEND</button>
+		</form>
+	</section>
 	<!-- Footer -->
-	<footer></footer>
+	<footer>
+		<p class="foot_cont">All Rights Reserved,Designed By Muria</p>
+		<p class="icons">
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		</p>
+	</footer>
 
 	<script src="assets/js/main.js"></script>
 </body>

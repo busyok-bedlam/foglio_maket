@@ -24,7 +24,7 @@
 	box-sizing: border-box;
 }
 body{
-	font-size: 14px;
+	font-size: 15px;
 	font-family: sans-serif;
 
 }
@@ -47,15 +47,19 @@ img{
 h3{
 	font-weight: normal;
 }
+#about_me,#logotip,#my_skills{
+	padding-left: 164px;
+}
 .title {
   /*overflow: hidden;*/
-  background: #fff;
+/*   background: #fff; */
   font-weight: normal;
   font-size: 1.2em;
   font-weight: 500;
   text-transform: uppercase;
   position: absolute;
-  left: 70px;
+  top: 75px;
+  left: -5px;
   white-space: nowrap;
 
   
@@ -65,24 +69,23 @@ h3{
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  width: 180%;
+  width: 166.5px;
   height: 2px;
   background: #000;
   border: solid #FFF;
-  border-width: 0 5px;
+  border-width: 0 3px;
   text-indent: 0;
 }
 .title:before {
-  margin-left: -90%;
+  /* margin-left: -90%; */
 }
 
 .gallery{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: calc(1135/1500*100%);
-	margin-left: 12%;
-	margin-top: calc(5/150*100%);
+	width: 1025px;
+
 }
 .gallery .gal_elem{
 	height: 270px;
@@ -103,7 +106,7 @@ header{
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(255, 197, 255, 0.3);
+	background-color: rgba(11, 11, 11, .5);
 }
 header menu {
 	float: left;
@@ -127,12 +130,13 @@ header menu li a{
 	text-transform: uppercase;
 	color: #fff;
 	padding: 0 20px 0 20px;
-	font-size: 1em;
+	font-size: .9em;
 	transition: background .5s ease-out;
 }
 header menu li a:hover{
-	background-color: rgba(188, 39, 72, 0.4);
+	background-color: rgba(187, 216, 212, 0.4);
 	border-bottom: 4px solid #FF8800;
+	color: #000;
 }
 .logo{
 	display: block;
@@ -159,21 +163,31 @@ header menu li a:hover{
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 800px;
-	padding-top: 200px;
-	padding-left: 175px;
+	padding-top: 125px;
 	color: #fff;
 }
 .download{
 	display: inline-block;
-	padding: 10px;
+	width: 200px;
+	height: 66px;
+	/* padding: 25px 18px; */
+	text-align: center;
+	line-height: 66px;
 	color: #fff;
 	border: 2px solid #fff;
 	margin-top: 10px;
+	font-size: 1.3em;
 }
 .download:hover{
 	
 	color:#ccc;
 	border-color: #ccc;
+}
+.intro{
+	margin-top: 46px;
+	margin-bottom: 42px;
+	display: inline-block;
+	font-size: 1.5em;
 }
 /*
 2. /Logotip
@@ -186,9 +200,9 @@ header menu li a:hover{
 -------------------------------------------------------------------*/
 #about_me{
 	/*padding-top: 6.4em;*/
-	padding-top: 6%;
-	padding-bottom: 6%;
-	padding-left: calc(47/150*100%);
+	padding-top: 87px;
+	padding-bottom: 87px;
+	padding-left: 427px;
 	position: relative;
 	overflow: hidden;
 }
@@ -207,6 +221,7 @@ header menu li a:hover{
 }
 #about_me article .content{
 	width: 65%;
+	line-height: 200%;
 }
 #about_me p:nth-child(2) {
 	margin: 20px 0;
@@ -217,7 +232,7 @@ header menu li a:hover{
 }
 #about_me .content .links a{
 	color: #000;
-	margin-right: 30px;
+	margin-right: 33px;
 }
 #about_me .content .links a:hover{
 	color: #4A4A4A;
@@ -235,18 +250,18 @@ header menu li a:hover{
 -
 ------------------------------------------------------------------*/
 #my_skills{
-	height: 280px;
+	height: 283px;
 	background: #000;
 	overflow: hidden;
 	color: #fff;
 	font-weight: 500;
 }
 #my_skills .skill{
-	width: calc(26/150*100%);
+	width: 17%;
 	/*border: 1px solid #fff;*/
 	float: left;
 	height: inherit;
-	margin-left: 12%;
+	margin-right: 164px;
 }
 #my_skills .skill span{
 	display: block;
@@ -292,9 +307,9 @@ header menu li a:hover{
 5. My experience
 -------------------------------------------------------------------*/
 #my_experience{
-	padding-top: 6%;
-	padding-bottom: 6%;
-	padding-left: calc(47/150*100%);
+	padding-top: 84px;
+	padding-bottom: 81px;
+	padding-left: 427px;
 	position: relative;
 }
 #my_experience h4{
@@ -302,8 +317,8 @@ header menu li a:hover{
 }
 #my_experience > article{
 	position: relative;
-	width: 54%;
-	padding: 3% 7.5%;
+	width: 500px;
+	padding: 40px 95px;
 	border: 1px solid #ccc;
 	line-height: 1.5;
 	box-shadow: 0 0 10px #ccc;
@@ -315,23 +330,31 @@ header menu li a:hover{
 }
 
 #my_experience > article >aside{
+	padding-top: 30px;
 	position: absolute;
-	width: 70%;
-	padding: 3% 0;
+	width: 320px;
 	border: 1px solid #000;
 	text-align: center;
-	left: 85%;
-	top: 40%;
+	right: -260px;
+	bottom: 22px;
 	background: #fff;
 	z-index: 2;
+	height: 120px;
+
 
 	
 }
+#my_experience >.exp>p{
+	margin-top: 30px;
+	line-height: 130%;
+
+}
 #my_experience > .exp2 > aside{
-	left: -60%;
+	left: -260px;
 }
 #my_experience > article >aside h4{
-	font-size: 1.5em;
+	font-size: 2em;
+	font-weight: bold;
 
 
 }
@@ -349,6 +372,14 @@ header menu li a:hover{
 	background-image: url("../../images/background/mount2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 64px 240px;
+	z-index: 1;
+}
+#slider .conte{
+	
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	z-index: 2;
 }
 
 /*
@@ -359,18 +390,21 @@ header menu li a:hover{
 7. My services
 --------------------------------------------------------------------*/
 #my_services{
-	padding-top: 6%;
-	padding-bottom: 6%;
-	padding-left: calc(47/150*100%);
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 425px;
 	position: relative;	
 }
 #my_services .serv{
-	width: 24.3%;
+	width: 325px;
 	border: 1px solid #ccc;
 	box-shadow: 0 0 20px #ccc;
-	padding: 3% 3%;
+	/* padding: 3% 3%; */
 	position: relative;
 	z-index: 1;
+	padding: 48px 35px 115px;
+	padding-bottom: 115px;
+	padding-top: 48px;
 }
 #my_services .serv1{
 	margin-bottom: 3%;
@@ -380,20 +414,25 @@ header menu li a:hover{
 }
 #my_services .serv2{
 
-	margin-left: 250px;
-	margin-bottom: -65px;
-	margin-top: -65px;
+	margin-left: 385px;
+	margin-bottom: -92px;
+	margin-top: -92px;
 }
 #my_services .serv aside{
 	position: absolute;
 	border: 1px solid #000;
 	width: 100%;
+	height: 70px;
+	line-height: 70px;
 	text-align: center;
-	padding: 2% 0;
+	font-size: 1.5em;
 	z-index: 2;
 	background: #fff;
 	bottom: -7%;
 
+}
+.serv>p{
+	line-height: 150%;
 }
 #my_services .serv aside i{
 	font-size: 1.5em;
@@ -413,15 +452,22 @@ header menu li a:hover{
 8. Statistics
 --------------------------------------------------------------------*/
 #statistics{
-	height: 280px;
+	height: 252px;
 	background-image: url("../../images/background/mount6.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #fff;
 	background-position: center;
 	overflow: hidden;
-	padding-left: calc(265/1500*100%);
+	padding-left: 240px;
 	white-space: nowrap;
+	position: relative;
+}
+.stats{
+	display: flex;
+	width: 874px;
+	justify-content: space-between;
+	height: inherit;
 }
 .stat{
 	width: calc(2/15.5*100%);
@@ -429,18 +475,24 @@ header menu li a:hover{
 /*	border-right: 1px solid #fff;
 	border-left: 1px solid #fff;*/
 	height: inherit;
-	text-align: center;
-	margin-right: calc(2/15*100%);
-}
-
-.stat>span{
-	display: block;
+	padding-top: 80px;
+	/* text-align: center; */
 }
 .num{
-	margin-top: 50%;
-	font-size: 1.5em;
-	margin-bottom: 20%;
-
+	text-align: center;
+	font-size: 27px;
+}
+.stat:nth-child(1){
+	width: 158px;
+}
+.stat:nth-child(2){
+	width: 168px;
+}
+.stat:nth-child(3){
+	width: 178px;
+}
+.stat>span{
+	display: block;
 }
 .descr{
 	font-size: 1.3em;
@@ -453,33 +505,34 @@ header menu li a:hover{
 9. My works
 --------------------------------------------------------------------*/
 #my_works{
-	padding-top: calc(1/15*100%);
+	padding-top: 140px;
+	padding-left: 160px;
+	position: relative;
+}
+#my_works .title{
 
 }
 #my_works .gallery{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: calc(1135/1500*100%);
-	margin-left: 12%;
-	margin-top: calc(5/150*100%);
+
 }
 #my_works .gallery .gal_elem{
-	height: 270px;
+	height: 280px;
 	overflow: hidden;
 	/*border: 1px solid #000;*/
 }
 #my_works .gallery .gal_elem:nth-child(-n+2){
 
-	width: 48.4%;
+	width: 500px;
 	margin-bottom: 50px;
 }
 #my_works .gallery .gal_elem:nth-child(n+3){
-	width: calc(360/1135*100%);
+	width: 320px;
 }
-.gal2{
-	width: calc(360/1135*100%);
-}
+
+
 /*
 9. /My works
 --------------------------------------------------------------------*/
@@ -488,8 +541,16 @@ header menu li a:hover{
 10. My team
 --------------------------------------------------------------------*/
 #my_team{
-	padding-top: 6%;
-	border-top: 1px solid #000;
+	padding-top: 140px;
+	padding-left: 160px;
+	background: #F5F2F4;
+	padding-bottom: 80px;
+	position: relative;
+}
+
+#my_team .gallery .gal_elem{
+	width: 320px;
+	height: 295px;
 }
 /*
 10. /My team
@@ -498,7 +559,77 @@ header menu li a:hover{
 /*
 11. /Get in touch
 --------------------------------------------------------------------*/
+#get_in_touch{
+	position: relative;
+	padding-top: 90px;
+	padding-left: 160px;
+}
+#get_in_touch .title{
+	top: 70px;
+}
+.contacts{
+	height: 180px;
+	display: flex;
+	width: 1025px;
+	justify-content: space-between;
+	/* border: 1px solid #000; */
 
+
+}
+.cont{
+	width: 320px;
+	/* border: .5px solid #000; */
+	padding: 40px 60px;
+	text-align: center;
+
+}
+.icon{
+	font-size: 2em;
+}
+.cont p:nth-child(2){
+	margin-top: 30px;
+	font-size: 1.2em;
+}
+.myform{
+	/* border: 1px solid red; */
+	display: flex;
+	flex-wrap: wrap;
+	padding: 45px 60px;
+	width: 1025px;
+	justify-content: space-between;
+	box-shadow: 0 0 20px #ccc;
+
+
+}
+.myform>input[type="text"],.myform>input[type="email"]{
+	width: 436px;
+	border: 1px solid #000;
+	height: 68px;
+	line-height: 68px;
+	font-size: 1.5em;
+	text-indent: 28px;
+	color: #000;
+}
+.myform>textarea{
+
+	width: 100%;
+	border: 1px solid #000;
+	height: 152px;
+	font-size: 1.5em;
+	padding-top: 28px;
+	text-indent: 28px;
+	margin: 40px 0;
+}
+.myform>button{
+	display: block;
+	width: 200px;
+	height: 50px;
+	background: #000;
+	border: none;
+	color: #fff;
+	font-size: 1.5em;
+	text-align: center;
+}
 /*
 11. /Get in touch
 --------------------------------------------------------------------*/
@@ -506,7 +637,30 @@ header menu li a:hover{
 /*
 12. Footer
 --------------------------------------------------------------------*/
-
+footer{
+	padding-top: 37px;
+	text-align: center;
+	height: 150px;
+	color: #fff;
+	background: #000;
+	overflow: hidden;
+	margin-top: 84px;
+}
+.foot_cont{
+	font-size: 1.2em;
+}
+footer a{
+	color: #fff;
+	display: inline-block;
+	height: 100%;
+	padding: 0 12px;
+}
+footer .icons{
+	display: flex;
+	justify-content: center;
+	font-size: 1.5em;
+	margin-top: 30px;
+}
 /*
 12. /Footer
 --------------------------------------------------------------------*/
