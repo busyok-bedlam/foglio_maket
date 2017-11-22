@@ -24,6 +24,7 @@
 	box-sizing: border-box;
 }
 body{
+	margin: 0 auto;
 	font-size: 15px;
 	font-family: sans-serif;
 
@@ -380,7 +381,28 @@ header menu li a:hover{
 	height: 100%;
 	background: rgba(0, 0, 0, .5);
 	z-index: 2;
+	color: #fff;
+	padding: 16px 22px;
 }
+.conte>p{
+	line-height: 150%;
+	margin: 40px 0;
+	font-size: 1.2em;
+}
+.conte>h3{
+	font-size: 1.2em;
+	font-weight: 700;
+}
+.navbut{
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	border: 2px solid #fff;
+}
+.navbut:nth-child(2){
+	background: #fff;
+}
+
 
 /*
 6. /Slider
@@ -546,12 +568,45 @@ header menu li a:hover{
 	background: #F5F2F4;
 	padding-bottom: 80px;
 	position: relative;
-}
+	text-align: center;
 
+}
+#my_team a{
+	color: #fff;
+}
+#my_team .names{
+	font-size: 1.7em;
+}
+#my_team span{
+	display: block;
+	line-height: 200%;
+}
+.linkes>a{
+	padding: 5px;
+}
 #my_team .gallery .gal_elem{
+
 	width: 320px;
 	height: 295px;
+	position: relative;
 }
+#my_team .gallery .gal_elem img{
+	z-index: 2
+}
+#my_team .gallery .gal_elem .fon{
+	padding-top: 100px;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	background: rgba(0, 0, 0, 0);
+	color: #fff;
+}
+#my_team .gallery .gal_elem:hover>.fon{
+	background: rgba(0, 0, 0, .7);
+	opacity: 1;
+
+} 
 /*
 10. /My team
 --------------------------------------------------------------------*/
